@@ -11,11 +11,11 @@ export default function Hero() {
             alt="Hero Image"
             width={420}
             height={500}
-            className="rounded-2xl object-cover"
+            className="rounded-2xl object-cover hover:scale-105 duration-300 cursor-pointer"
             quality={100}
           />
 
-          <div className="grid grid-cols-4 mt-8 gap-8">
+          <div className="hidden md:grid grid-cols-4 mt-8 gap-8">
             <Image
               src="/images/image-product-1-thumbnail.jpg"
               alt="Hero Image"
@@ -78,7 +78,7 @@ export default function Hero() {
               $250.00
             </h2>
           </div>
-          <Button className="bg-orange-500 hover:bg-orange-600 h-14 text-black font-bold w-76 cursor-pointer">
+          <Button className="bg-orange-500 hover:bg-orange-400 duration-300 h-14 text-black font-bold w-76 cursor-pointer">
             <Image
               src="/images/icon-cart.svg"
               alt="Cart"

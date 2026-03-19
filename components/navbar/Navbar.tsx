@@ -16,7 +16,7 @@ export default function Navbar() {
             <Image src="/images/logo.svg" alt="Logo" width={135} height={20} />
           </Link>
 
-          <nav className="flex gap-8 text-gray-500 font-medium h-25">
+          <nav className="hidden md:flex gap-8 text-gray-500 font-medium h-25">
             <Link
               href="/features"
               className="h-full flex items-center border-b-4 border-transparent hover:text-black hover:border-orange-500 transition-all duration-300"
@@ -65,7 +65,7 @@ export default function Navbar() {
             <DropdownMenuContent
               side="bottom" // Abre para baixo
               sideOffset={25}
-              className="w-[360px] p-0 bg-white rounded-xl shadow-2xl"
+              className="w-90 p-0 bg-white rounded-xl shadow-2xl"
             >
               <div className="p-6 border-b-2 border-slate-200">
                 <h3 className="font-bold text-lg">Cart</h3>
@@ -75,7 +75,7 @@ export default function Navbar() {
               </div>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Avatar className="w-12 h-12">
+          <Avatar className="w-12 h-12 border-3 border-transparent transition-all  hover:border-orange-500 duration-400 cursor-pointer">
             <AvatarImage
               src="https://github.com/kaynanoliveira.png"
               alt="User Avatar"
