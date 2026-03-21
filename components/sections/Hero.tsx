@@ -78,16 +78,38 @@ export default function Hero() {
               $250.00
             </h2>
           </div>
-          <Button className="bg-orange-500 hover:bg-orange-400 duration-300 h-14 text-black font-bold w-76 cursor-pointer">
-            <Image
-              src="/images/icon-cart.svg"
-              alt="Cart"
-              width={20}
-              height={20}
-              className="brightness-0"
-            />
-            Add to Cart
-          </Button>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center bg-slate-100 w-48 py-4 px-10 rounded-lg gap-12">
+              <button className="flex-shrink-0">
+                <Image
+                  src="/images/icon-minus.svg"
+                  alt="Minus"
+                  width={13}
+                  height={13}
+                />
+              </button>
+              <span className="font-bold text-lg">0</span>
+              <button className="flex-shrink-0">
+                <Image
+                  src="/images/icon-plus.svg"
+                  alt="Plus"
+                  width={13}
+                  height={13}
+                />
+              </button>
+            </div>
+
+            <Button className="bg-orange-500 hover:bg-orange-400 duration-300 py-7 text-black font-bold w-66 cursor-pointer">
+              <Image
+                src="/images/icon-cart.svg"
+                alt="Cart"
+                width={20}
+                height={20}
+                className="brightness-0"
+              />
+              Add to Cart
+            </Button>
+          </div>
         </section>
       </div>
     </main>
