@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { AvatarImage, Avatar, AvatarFallback } from "@/components/ui/avatar";
 import CartDropdown from "../cart/CartDropdown";
 import { NAV_LINKS } from "../constants/navigations";
+import UserAvatar from "../product/UserAvatar";
 
 export default function Navbar() {
   return (
@@ -27,13 +27,7 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-10">
           <CartDropdown />
-          <Avatar className="w-12 h-12 border-3 border-transparent transition-all  hover:border-orange-500 duration-400 cursor-pointer">
-            <AvatarImage
-              src="https://github.com/kaynanoliveira.png"
-              alt="User Avatar"
-            />
-            <AvatarFallback>KN</AvatarFallback>
-          </Avatar>
+          <UserAvatar />
         </div>
       </div>
     </header>
