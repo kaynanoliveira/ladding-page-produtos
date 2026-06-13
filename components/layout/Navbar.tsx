@@ -7,13 +7,13 @@ import UserAvatar from "../product/UserAvatar";
 export default function Navbar() {
   return (
     <header className="w-full">
-      <div className="mx-auto max-w-6xl px-8 h-25 flex items-center justify-between border-b-2 border-gray-200">
+      <div className="mx-auto max-w-6xl px-8 h-24 flex justify-between border-b-2 border-gray-200">
         <div className="flex items-center gap-12">
-          <Link href="/" className="shrink-0">
+          <Link href="/" className="shrink-0 hover:scale-105 duration-300">
             <Image src="/images/logo.svg" alt="Logo" width={135} height={20} />
           </Link>
 
-          <nav className="hidden md:flex gap-8 text-gray-500 font-medium h-25">
+          <nav className="hidden md:flex gap-8 text-gray-500 font-medium h-24">
             {NAV_LINKS.map((item) => (
               <Link
                 key={item.name}

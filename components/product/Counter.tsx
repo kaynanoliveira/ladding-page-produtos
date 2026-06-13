@@ -20,11 +20,16 @@ export default function Counter() {
           alt="Minus"
           width={13}
           height={13}
+          className="hover:brightness-80 transition-all duration-300"
         />
       </button>
       <span className="font-bold text-lg">{count}</span>
       <button className="shrink-0 cursor-pointer" onClick={handleIncrement}>
-        <Image src="/images/icon-plus.svg" alt="Plus" width={13} height={13} />
+        <Image src="/images/icon-plus.svg"
+          alt="Plus"
+          width={13}
+          height={13}
+          className="hover:brightness-80 transition-all duration-300" />
       </button>
     </div>
   );

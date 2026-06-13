@@ -32,7 +32,7 @@ export default function ProductGallery() {
             width={80}
             height={90}
             onClick={() => atualizarImagemSelecionada(index)}
-            className="rounded-md object-cover border-3 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-45 cursor-pointer"
+            className="rounded-md object-cover border-3 border-transparent transition-all duration-500 hover:border-orange-500 hover:opacity-45 cursor-pointer"
           />
         ))}
       </div>
